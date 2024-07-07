@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-set(PROJECT_AUTHOR "SeaSparrow" CACHE STRING "")
+set(PROJECT_AUTHOR "SeaSparrow - NG by Styyx" CACHE STRING "")
 set(NAME "RainExtinguishesFires" CACHE STRING "")
 set(VERSION 5.0.1 CACHE STRING "")
 

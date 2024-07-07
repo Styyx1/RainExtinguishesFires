@@ -41,7 +41,10 @@
       "hidden": true,
       "binaryDir": "${sourceDir}/build-ng",
       "cacheVariables": {
-        "BUILD_NG": true
+        "BUILD_NG": true,
+        "SUPPORT_VR": true,
+        "BUILD_SKYRIMVR": true
+
       }
     },
     {

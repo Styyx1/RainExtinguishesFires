@@ -32,6 +32,7 @@ namespace FireManipulator {
 		
 		if (const auto TES = RE::TES::GetSingleton(); TES) {
 			TES->ForEachReferenceInRange(a_center, radius, [&](RE::TESObjectREFR* a_ref) {
+				if (!a_ref) return continueContainer;
 				if (fireManipulatorSingleton->IsRefFrozen(a_ref)) return continueContainer;
 				if (!a_ref->Is3DLoaded()) return continueContainer;
 				if (a_ref->IsDisabled()) return continueContainer;

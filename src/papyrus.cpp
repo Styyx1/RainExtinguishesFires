@@ -38,7 +38,7 @@ namespace Papyrus {
 	}
 
 	std::vector<RE::TESObjectREFR*> GetNearbyAssociatedReferences(STATIC_ARGS, RE::TESObjectREFR* a_center) {
-		auto* baseForm = a_center->GetBaseObject();
+		auto baseForm = a_center->GetBaseObject();
 		const FireData* data = CachedData::Fires::GetSingleton()->GetFireData(baseForm);
 		auto response = FireManipulator::Manager::GetSingleton()->GetNearbyAssociatedReferences(a_center, data);
 		return response;
